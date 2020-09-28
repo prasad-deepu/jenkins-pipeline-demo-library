@@ -1,6 +1,6 @@
 def call(Map config) {
     node("slave_dotnet") {
-      echo ${config.message}
+      echo "${config.message}"
       sh '''
         git version
         docker version
