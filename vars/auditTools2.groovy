@@ -1,5 +1,5 @@
 def call(Map config) {
-    node {
+    node("slave_dotnet") {
       echo ${config.message}
       sh '''
         git version
