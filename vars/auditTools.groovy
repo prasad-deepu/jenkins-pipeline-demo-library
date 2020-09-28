@@ -1,5 +1,5 @@
 def call() {
-    node {
+    node("slave_dotnet") {
       sh '''
         git version
         docker version
